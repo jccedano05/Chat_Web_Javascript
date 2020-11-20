@@ -26,7 +26,6 @@ $(function(){   //$ es un selector de jQuery
                 $('#contentWrap').show();
                 $('#imagenInicio').hide();
                 
-                modifyUsersTotal();
             }else{
                 $nickError.html(`<div class="alert alert-danger">
                 That username already exist in the chat.
