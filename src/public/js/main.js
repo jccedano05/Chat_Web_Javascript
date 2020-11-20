@@ -16,6 +16,7 @@ $(function(){   //$ es un selector de jQuery
 
        const $users = $('#usernames');
        const $totalUsers = $('#totalUsers'); 
+       
 
        $nickForm.submit(e => {
            e.preventDefault();
@@ -23,6 +24,8 @@ $(function(){   //$ es un selector de jQuery
             if(data){
                 $('#nickWrap').hide();
                 $('#contentWrap').show();
+                $('#imagenInicio').hide();
+                
                 modifyUsersTotal();
             }else{
                 $nickError.html(`<div class="alert alert-danger">
